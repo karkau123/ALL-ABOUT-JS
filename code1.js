@@ -123,5 +123,227 @@ console.log(k + " "+ r);
 
 // 17 FUNCTIONS
 
+// function hey ()
+// {
+//    console.log("Hello Roshu");
+
+// }
 
 
+//  18
+// hey();
+
+// function sum ( a ,  b)
+// {
+//       console.log(a*b);
+// }
+// sum( "Roshu" , 2);
+
+
+// scope - Global and Local
+
+// var x = 10;
+// function sum ( a ,  b)
+// {
+//       console.log(a*b + x );
+// }
+// sum (2 , 3)
+
+// 20
+
+// return a value from function
+
+// function minus ( a, b)
+// {
+//     return  a-b;
+// }
+ 
+// console.log(minus(3 , 22));
+
+ // 21 build javascript objects
+//****  USE OBJECTS TO STORE AS KEY VALUE PAIR
+//  var dog = {
+//     "Name" : "pillu",
+//     "legs" : 4 ,
+//     "tails" : 1 
+//  };
+// console.log(dog.Name);  -  access object with dot 
+//  console.log(dog["Name"]);  - access object with braces -> use this when name string ha spaces
+
+//22 Updaing object properties
+
+// dog.Name = "kati";
+// console.log(dog.Name);
+
+
+// 23 Delete properties from obejects
+// delete(dog.legs);
+// console.log(dog.legs);
+
+
+
+// 24 using if else and check if the property is present in the object or not
+//*** hasOwnProperty
+// var dog = {
+//    "Name" : "pillu",
+//    "legs" : 4,
+//    "tails" : 1 
+// };
+
+// if (dog.hasOwnProperty("legs")) { // "legs" as a string
+//      console.log(1);
+// } else {
+//    console.log(0);
+// }
+
+// A Javascript object is used to store flexible Data
+
+// 25 RECORD COLLECTION
+
+/*
+JSON stands for JavaScript Object Notation
+JSON is a lightweight data-interchange format
+JSON is plain text written in JavaScript object notation
+JSON is used to send data between computers
+JSON is language independent
+*/
+
+
+// json.parse   ->  json strings to javascript objects
+// json.stringify -> objects to json strings
+
+// loops same as c++
+
+
+// objcts are stored in a curly brace
+
+// const dogs = [
+//    {
+//        name: "Pillu",
+//        legs: 4,
+//        tails: 1,
+//        breed: "Labrador"
+//    },
+//    {
+//        name: "Tommy",
+//        legs: 4,
+//        tails: 1,
+//        breed: "Beagle"
+//    },
+//    {
+//        name: "Bruno",
+//        legs: 4,
+//        tails: 1,
+//        breed: "Bulldog"
+//    }
+// ];
+
+// function lookup (name1 , prop)
+// {
+//       for (var i=0 ; i<dogs.length;i++)
+//       {
+//            if (dogs[i].name == name1)  
+//            {
+//                return dogs[i][prop];
+//            }
+//       }
+//       return "DOG NOT FOUND";
+// }
+
+// console.log(lookup("Bruno" , "legs" ));
+
+
+// 26 string to int
+// s = "234";
+// var x =  parseInt(s);
+// console.log(x+1);
+
+// 27 string to int with base , Default base is base 10
+// s = "101";
+// var x =  parseInt(s , 2);
+// console.log(x+1);
+
+// 27 ternary 
+
+// function check (a , b)
+// {
+//     return a==b ? true : false;
+// }
+
+// console.log(check(1 , 1));
+
+
+// 28 Declare a Read only variable with constb keyword
+
+
+// 29 use arrow to write concise aonymuous function
+
+// const magic =  () =>   new Date();
+ 
+// var ans = function(a, b) {
+//    return a + b;
+// };
+// console.log(ans(3, 4)); 
+
+// /*** 
+//  var ans = (a , b) => a+b;
+//  console.log(ans(2 , 3));
+
+// const inc = (function(){return function inc(number , val = 1){
+//    return number + val;
+// }});
+
+// In the above fun ig two parameters are passed then then the value of val wil 
+// be the value you entered else it will be default 1
+
+// 30 Rest OPerator ...args
+/*
+The ...args syntax in JavaScript is used as a rest parameter to collect all 
+remaining arguments into a single array. It is particularly useful 
+in functions when you don’t know the
+ exact number of arguments in advance.
+
+function sum(...args) {
+    return args.reduce((total, num) => total + num, 0);
+}
+
+console.log(sum(1, 2, 3, 4));  // Output: 10
+console.log(sum(5, 10));       // Output: 15
+console.log(sum());            // Output: 0
+
+
+*/
+
+
+// spread operator -> spreads out the contents of an array into individual
+
+//31 destructuring assignment
+
+// const person = (name , age , gender) => ({name , age , gender});
+// console.log(person("Roshni" , 12 , "Female"));
+
+
+//32
+// new keyword
+// var name = function(pname)
+// {
+//     this.pname = pname;
+// }
+// var x = new name('ROSHU');
+// console.log(x.pname);
+
+//33
+// class name {
+//     constructor(pname)
+//     {
+//         this.pname = pname; 
+//     }
+// }
+// var x = new name("roshni");
+// console.log (x.pname);
+
+// 34 import and require  => See syntax
+
+// import cap from "./sum_function";
+// const x =  cap("hey");
+// console.log(x);
